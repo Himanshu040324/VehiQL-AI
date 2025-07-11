@@ -2,12 +2,17 @@
   "name": "vehiql",
   "version": "0.1.0",
   "private": true,
+
+
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
+  "dev": "next dev --turbopack",
+  "build": "next build",
+  "start": "next start",
+  "lint": "next lint",
+  "postinstall": "prisma generate"
+},
+
+
   "dependencies": {
     "@arcjet/next": "^1.0.0-beta.8",
     "@clerk/nextjs": "^6.22.0",
